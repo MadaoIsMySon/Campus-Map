@@ -1,0 +1,28 @@
+Problem1: 
+	q1.a: 
+	    X m(X y, String s);
+	    Y m(Object y, Object s);
+	q1.b: 
+		X m(X y, String s) : override
+		Y m(Object y, Object s) : overload
+		Z m(Y y, String s): overload
+		
+
+	q2.a:
+		No, IsoscelesTriangle changed the effects of setSides and will
+		    surprise the client by change both this.b and this.c to b. 
+		    It does not have a stronger specification.
+	q2.b:
+		Squid is not a true subtype because it returns 0 while Vertebrate
+		returns an integer>0. So Squid does not have a stronger specification.
+		
+		Human is a true subtype because it returns 7 which is stronger than 
+		the return of Vertebrate. So the specification of human is stronger
+		than that of Vertebrate.     
+    q2.c:
+    	MountainBike is a true subtype of Bicycle because it inherit all methods
+    	except for the constructor in Bicycle and Bicycle can be substituted with
+    	MountainBike.
+    q2.d:
+    	ConcurrentAccount is not a true subtype of Account because it throws an
+    	additional exception.

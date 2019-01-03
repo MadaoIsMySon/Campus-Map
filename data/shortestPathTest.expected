@@ -1,0 +1,45 @@
+First building id/name, followed by Enter: Second building id/name, followed by Enter: Path from 200 Sunset Terrace to Academy Hall:
+	Walk NorthWest to (Intersection 127)
+	Walk West to (Intersection 128)
+	Walk West to (Intersection 126)
+	Walk SouthWest to (Burdett Avenue Residence Hall)
+	Walk West to (Intersection 109)
+	Walk South to (Intersection 124)
+	Walk SouthWest to (Bray Hall)
+	Walk SouthWest to (Intersection 121)
+	Walk West to (Hall Hall)
+	Walk West to (Intersection 103)
+	Walk SouthWest to (Alumni Sports & Recreation Center)
+	Walk West to (Intersection 140)
+	Walk South to (Intersection 139)
+	Walk South to (Intersection 102)
+	Walk West to (Academy Hall)
+Total distance: 1418.281 pixel units.
+First building id/name, followed by Enter: Second building id/name, followed by Enter: Path from Academy Hall to 200 Sunset Terrace:
+	Walk East to (Intersection 102)
+	Walk North to (Intersection 139)
+	Walk North to (Intersection 140)
+	Walk East to (Alumni Sports & Recreation Center)
+	Walk NorthEast to (Intersection 103)
+	Walk East to (Hall Hall)
+	Walk East to (Intersection 121)
+	Walk NorthEast to (Bray Hall)
+	Walk NorthEast to (Intersection 124)
+	Walk North to (Intersection 109)
+	Walk East to (Burdett Avenue Residence Hall)
+	Walk NorthEast to (Intersection 126)
+	Walk East to (Intersection 128)
+	Walk East to (Intersection 127)
+	Walk SouthEast to (200 Sunset Terrace)
+Total distance: 1418.281 pixel units.
+First building id/name, followed by Enter: Second building id/name, followed by Enter: There is no path from Polytechnic Residence Commons to Rensselaer Union.
+First building id/name, followed by Enter: Second building id/name, followed by Enter: There is no path from Polytechnic Residence Commons to Rensselaer Union.
+First building id/name, followed by Enter: Second building id/name, followed by Enter: There is no path from Polytechnic Residence Commons to Rensselaer Union.
+First building id/name, followed by Enter: Second building id/name, followed by Enter: There is no path from Polytechnic Residence Commons to Rensselaer Union.
+First building id/name, followed by Enter: Second building id/name, followed by Enter: Unknown building: [Polytechnic Residence Com]
+First building id/name, followed by Enter: Second building id/name, followed by Enter: Unknown building: [Polytechnic Residence Com]
+First building id/name, followed by Enter: Second building id/name, followed by Enter: Unknown building: [999]
+Unknown building: [Rensselaer Uni]
+First building id/name, followed by Enter: Second building id/name, followed by Enter: Unknown building: [999]
+First building id/name, followed by Enter: Second building id/name, followed by Enter: Path from Admissions to Admissions:
+Total distance: 0.000 pixel units.

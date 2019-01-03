@@ -1,0 +1,14 @@
+1. As a collection of edges: 
+	 a. Efficient to add new edges and get all edges.
+	 b. Use less memory space because only space for existed edges are needed.
+	 
+   As an adjacency list:
+   	 a. Efficient to find child nodes of a parent node.
+   	 b. Use less memory space because only space for existed edges and existing nodes are needed.
+   	 
+   As an adjacency matrix:
+     a. Efficient to find if two nodes are linked
+     
+   I choose adjacency list(HashMap<String, TreeSet<Edge>>). It costs O(1) to add node, O(nlog(n)) to add edge,
+   O(nlog(n)) to get an iterator to iterate all nodes, O(nlog(n)) to get an iterator to iterate all child nodes. Overall, 
+   it is efficient for the graph representation since adding nodes will usually be the most frequently used method.

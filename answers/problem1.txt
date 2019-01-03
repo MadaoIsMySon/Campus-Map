@@ -1,0 +1,199 @@
+/**
+ * Edge is an immutable class and represents an edge connecting a starting node with an ending node. 
+ * It is directed and has a label.
+ * 
+ * Examples of Edge include <"1","2"> representing a edge from node "1" to node "2".
+ * 
+ * Abstraction Function: An Edge , e, represents a directed edge going from one node to another with a label.
+ * 
+ * Representation Invariant: No duplicate edges(same StartNode, EndNode, and Label)
+ * 
+ * StartNode: A string representing the start node;
+ * EndNode: A string representing the end node;
+ * Label: A string representing the label.
+ */
+
+public class Edge implements Comparable<Edge>{
+	
+	/** Holds the value of the start node */
+	private String StartNode;
+	/** Holds the value of the end node */
+	private String EndNode;
+	/** Holds the value of the labels */
+	private String Label;
+	
+	
+	/**
+	 * @param start is the start node with a value of string type, end is the 
+	 * 		  end node with a value of string type, label is the label with a value of string type
+     * @effects Constructs a new Edge with start node of string value "start", 
+     * 			end node of string value "end", and label of string value "label".
+     */
+	public Edge(String start, String end, String label)
+	{
+		throw new RuntimeException("Not implemented"); //stub
+	}
+	
+	/**
+     *
+     * @return the start node of this edge
+     */
+	public String getStartNode() 
+	{
+		throw new RuntimeException("Not implemented"); //stub
+	}
+	
+	/**
+    *
+    * @return the end node of this edge
+    */
+	public String getEndNode()
+	{
+		throw new RuntimeException("Not implemented"); //stub
+	}
+	
+	/**
+    *
+    * @return the label of this edge
+    */
+	public String getLabel()
+	{
+		throw new RuntimeException("Not implemented"); //stub
+	}
+
+	/**
+	 * Method for the use of interface Comparable
+     * @param Edge o used to be compared with this
+     * @return return 1 if this>o, -1 if this<o, 0 if this==o
+     */
+	@Override
+	public int compareTo(Edge o) {
+		throw new RuntimeException("Not implemented"); //stub
+	}
+}
+
+/**
+ * Graph is a mutable class and represents a directed labeled multigraph composed by nodes and edges.
+ * The variable type of nodes and edge labels are all string
+ *
+ *
+ * Representation Field:
+ * 	adj <startnode1, edges>, <startnode2, edges>,... <startnodek, edges>
+ * 	Nodes n1, n2, ..., nn
+ *  
+ *  adj is a hashmap representing an adjacency list set start nodes 
+ *  as key and directed edges started from the start node as value.
+ *  Nodes is a TreeSet containing all nodes in the graph
+ *  
+ * 
+ * Abstraction Function: 
+ *  Graph, g, represents a directed labeled multigraph containing the following terms:
+ *  	adj: The key of adj is start node, and the value of adj is directed edges going from the start node
+ *  	Nodes: all nodes in the graph
+ *  
+ * Representation Invariant:
+ * 	No duplicate edges(no two edge have same start nodes, same end nodes, and same labels)
+ *  No duplicate nodes(no two nodes have same string values)
+ *  adj[key].getStartNode==key for all key in adj
+ *  All start nodes contained in adj are in Nodes
+ */
+
+public class Graph {
+	
+	/** A hashmap holding all start nodes and edges starting from them */
+	HashMap<String, TreeSet<Edge>> adj ;
+	/** A TreeSet containing all nodes in the graph */
+	TreeSet<String> Nodes;
+	
+	
+	/**
+     * Checks that the representation invariant holds (if any).
+     **/
+    // Throws a RuntimeException if the rep invariant is violated.
+	private void checkRep() throws RuntimeException
+	{
+		throw new RuntimeException("Not implemented"); //stub
+	}
+	
+	/**
+     * @effects Constructs a new Graph with no edges and nodes.
+     */
+	public Graph()
+	{
+		throw new RuntimeException("Not implemented"); //stub
+	}
+	
+	/**
+	@param: a node with string value
+	@requires: the parameter should not be null
+	@modifies: this.Nodes
+	@effects: add a node a to the graph if it is no duplicates in the graph
+	@returns: None
+	*/
+	public void addNode(String node)
+	{
+		throw new RuntimeException("Not implemented"); //stub
+	}
+	
+	/**
+	@param: start node and end node with string value, and label with string value
+	@requires: the parameter should not be null
+	@modifies: this.Nodes && this.adj
+	@effects: add an edge and potentially two nodes a to the graph
+	@returns: None
+	*/
+	public void addEdge(String start, String end, String label)
+	{
+	    throw new RuntimeException("Not implemented"); //stub
+	}
+	
+	/**
+	@param: None
+	@requires: None
+	@modifies: None
+	@effects: None
+	@returns: A hash set containing all nodes in the graph
+	*/
+	public TreeSet<String> getAllNodes()
+	{
+		throw new RuntimeException("Not implemented"); //stub
+	}
+	
+	/**
+	@param: A node with string value
+	@requires: None
+	@modifies: None
+	@effects: None
+	@returns: A hash set containing all edges starting from parameter node if node is the graph, return
+			  an empty hash set if node is not in the graph or no edges start from the node
+	*/ 
+	public TreeSet<Edge> getEdges(String node)
+	{
+		throw new RuntimeException("Not implemented"); //stub
+	}
+	
+	/**
+	@param: None
+	@requires: None
+	@modifies: None
+	@effects: None
+	@returns: An iterator of all nodes in the graph in sorted order
+	*/ 
+	public Iterator<String> listNodes()
+	{
+		throw new RuntimeException("Not implemented"); //stub
+	}
+	
+	/**
+	@param: Parent node with string value
+	@requires: None
+	@modifies: None
+	@effects: None
+	@returns: An iterator of all nodes starting from parent in the graph in sorted order if parent
+			  is a start node in the graph, return an iterator of an empty hash set otherwise.
+	*/ 
+	public Iterator<String> childNode(String parent)
+	{
+		throw new RuntimeException("Not implemented"); //stub
+	}
+}
